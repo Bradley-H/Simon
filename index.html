@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Simon</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+</head>
+
+<body>
+  <h1 id="level-title">Click here to Start</h1>
+  <h1 id="turn"></h1>
+  <h1 id="again"></h1>
+  <div class="container">
+    <div lass="row">
+
+      <div type="button" id="green" data-id="1" class="btn green">
+
+      </div>
+
+      <div type="button" id="red" data-id="2" class="btn red">
+
+      </div>
+    </div>
+
+    <div class="row">
+
+      <div type="button" id="yellow" data-id="3" class="btn yellow">
+
+      </div>
+      <div type="button" id="blue" data-id="4" class="btn blue">
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <audio data-id="1" src="sounds/green.mp3"></audio>
+  <audio data-id="2" src="sounds/red.mp3"></audio>
+  <audio data-id="3" src="sounds/yellow.mp3"></audio>
+  <audio data-id="4" src="sounds/blue.mp3"></audio>
+  <audio data-id="5" src="sounds/wrong.mp3"></audio>
+
+  <script src="app.js"></script>
+
+</body>
+
+</html>
