@@ -1,0 +1,39 @@
+// THIS PARTIAL IS FOR DISPLAYING INFORMATION
+
+#level-title, #turn {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 3rem;
+    margin:  5%;
+    color: rgb(250, 179, 74);
+    @include DESKTOP{
+      margin: 3%;
+    }
+  }
+  
+  #again{
+    display: none;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2rem;
+    margin: 1rem;
+    color: lightskyblue;
+  }
+
+  .container {
+    display: inline-block;
+    width: -1%;
+    margin: 10% auto;
+    @include TABLET{
+      display: flex;
+      margin: 13% 10% 0 10%;
+    }
+    @include DESKTOP{
+      display: flex;
+      margin: 0 auto;
+      width: 50%;
+    }
+  }
+
+  .pressed {
+    box-shadow: 0 0 20px white;
+    background-color: grey;
+  }

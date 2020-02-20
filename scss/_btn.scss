@@ -1,0 +1,28 @@
+.btn {
+    margin: 25px;
+    display: inline-block;
+    height: 80px;
+    width: 80px;
+    border: 10px solid black;
+    border-radius: 20%;
+    @include DESKTOP{
+      height: 150px;
+      width: 150px;
+    }
+  }
+
+.red{
+      background-color: $red;
+  }
+
+.green{
+    background-color: $green;
+  }
+
+.blue{
+    background-color: $blue;
+}
+
+.yellow{
+    background-color: $yellow;
+}

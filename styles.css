@@ -1,62 +1,27 @@
-body {
-  text-align: center;
-  background-color: #011F3F;
-  overflow: hidden;
-}
+body { text-align: center; background-color: #011F3F; overflow: hidden; }
 
-#level-title, #turn  {
-  font-family: 'Press Start 2P', cursive;
-  font-size: 3rem;
-  margin:  1.9%;
-  color: rgb(250, 179, 74);
-}
+.btn { margin: 25px; display: inline-block; height: 80px; width: 80px; border: 10px solid black; border-radius: 20%; }
 
-#again{
-  display: none;
-  font-family: 'Press Start 2P', cursive;
-  font-size: 2rem;
-  margin: 1rem;
-  color: lightskyblue;
-}
+@media (min-width: 801px) { .btn { height: 150px; width: 150px; } }
 
-.container {
-  display: flex;
-  width: 50%;
-  margin: auto;
+.red { background-color: red; }
 
-}
+.green { background-color: green; }
 
-.btn {
-  margin: 25px;
-  display: inline-block;
-  height: 150px;
-  width: 150px;
-  border: 10px solid black;
-  border-radius: 20%;
-}
+.blue { background-color: blue; }
 
-.game-over {
-  background-color: red;
-  opacity: 0.8;
-}
+.yellow { background-color: yellow; }
 
-.red {
-  background-color: red;
-}
+#level-title, #turn { font-family: 'Press Start 2P', cursive; font-size: 3rem; margin: 5%; color: #fab34a; }
 
-.green {
-  background-color: green;
-}
+@media (min-width: 801px) { #level-title, #turn { margin: 3%; } }
 
-.blue {
-  background-color: blue;
-}
+#again { display: none; font-family: 'Press Start 2P', cursive; font-size: 2rem; margin: 1rem; color: lightskyblue; }
 
-.yellow {
-  background-color: yellow;
-}
+.container { display: inline-block; width: -1%; margin: 10% auto; }
 
-.pressed {
-  box-shadow: 0 0 20px white;
-  background-color: grey;
-}
+@media (min-width: 600px) { .container { display: -webkit-box; display: -ms-flexbox; display: flex; margin: 13% 10% 0 10%; } }
+
+@media (min-width: 801px) { .container { display: -webkit-box; display: -ms-flexbox; display: flex; margin: 0 auto; width: 50%; } }
+
+.pressed { -webkit-box-shadow: 0 0 20px white; box-shadow: 0 0 20px white; background-color: grey; }
