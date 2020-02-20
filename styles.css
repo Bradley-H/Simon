@@ -1,8 +1,12 @@
 body { text-align: center; background-color: #011F3F; overflow: hidden; }
 
-.btn { margin: 25px; display: inline-block; height: 80px; width: 80px; border: 10px solid black; border-radius: 20%; }
+* { margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-@media (min-width: 801px) { .btn { height: 150px; width: 150px; } }
+.btn { margin: 30px 20px; display: inline-block; height: 80px; width: 80px; border: 10px solid black; border-radius: 20%; }
+
+@media (min-width: 600px) { .btn { margin-top: 10%; height: 90px; width: 90px; } }
+
+@media (min-width: 801px) { .btn { height: 120px; width: 120px; } }
 
 .red { background-color: red; }
 
@@ -12,16 +16,20 @@ body { text-align: center; background-color: #011F3F; overflow: hidden; }
 
 .yellow { background-color: yellow; }
 
-#level-title, #turn { font-family: 'Press Start 2P', cursive; font-size: 3rem; margin: 5%; color: #fab34a; }
+#level-title, #turn { font-family: 'Press Start 2P', cursive; font-size: 2rem; margin-top: 90px; color: #fab34a; }
 
-@media (min-width: 801px) { #level-title, #turn { margin: 3%; } }
+@media (min-width: 600px) { #level-title, #turn { font-size: 2.3rem; margin-top: 80px; } }
 
-#again { display: none; font-family: 'Press Start 2P', cursive; font-size: 2rem; margin: 1rem; color: lightskyblue; }
+@media (min-width: 801px) { #level-title, #turn { margin: 70px 2%; width: 95%; font-size: 2.5rem; } }
 
-.container { display: inline-block; width: -1%; margin: 10% auto; }
+#again { display: none; font-family: 'Press Start 2P', cursive; font-size: 2rem; margin: .1rem; color: lightskyblue; }
 
-@media (min-width: 600px) { .container { display: -webkit-box; display: -ms-flexbox; display: flex; margin: 13% 10% 0 10%; } }
+.container { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin-top: 1px; }
 
-@media (min-width: 801px) { .container { display: -webkit-box; display: -ms-flexbox; display: flex; margin: 0 auto; width: 50%; } }
+@media (min-width: 600px) { .container { width: 99%; margin: 55px auto; } }
+
+@media (min-width: 801px) { .container { margin: 70px auto; width: 98%; } }
 
 .pressed { -webkit-box-shadow: 0 0 20px white; box-shadow: 0 0 20px white; background-color: grey; }
+
+.row { margin: 0; padding: 0; }

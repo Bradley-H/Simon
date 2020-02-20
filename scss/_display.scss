@@ -2,11 +2,17 @@
 
 #level-title, #turn {
     font-family: 'Press Start 2P', cursive;
-    font-size: 3rem;
-    margin:  5%;
+    font-size: 2rem;
+    margin-top: 90px;
     color: rgb(250, 179, 74);
+    @include TABLET{
+      font-size: 2.3rem;
+      margin-top: 80px;
+    }
     @include DESKTOP{
-      margin: 3%;
+     margin: 70px 2%;
+     width: 95%;
+      font-size: 2.5rem;
     }
   }
   
@@ -14,26 +20,31 @@
     display: none;
     font-family: 'Press Start 2P', cursive;
     font-size: 2rem;
-    margin: 1rem;
+    margin: .1rem;
     color: lightskyblue;
   }
 
   .container {
-    display: inline-block;
-    width: -1%;
-    margin: 10% auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1px;
     @include TABLET{
-      display: flex;
-      margin: 13% 10% 0 10%;
+      width: 99%;
+      margin: 55px auto;
     }
     @include DESKTOP{
-      display: flex;
-      margin: 0 auto;
-      width: 50%;
+      margin: 70px auto;
+      width: 98%;
     }
   }
 
   .pressed {
     box-shadow: 0 0 20px white;
     background-color: grey;
+  }
+
+  .row{
+    margin: 0;
+    padding: 0;
   }

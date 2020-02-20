@@ -1,13 +1,18 @@
 .btn {
-    margin: 25px;
+    margin: 30px 20px;
     display: inline-block;
     height: 80px;
     width: 80px;
     border: 10px solid black;
     border-radius: 20%;
+    @include TABLET{
+      margin-top: 10%;
+      height: 90px;
+      width: 90px;
+    }
     @include DESKTOP{
-      height: 150px;
-      width: 150px;
+      height: 120px;
+      width: 120px;
     }
   }
 
