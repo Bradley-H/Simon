@@ -1,35 +1,167 @@
-body { text-align: center; background-color: #011F3F; overflow: hidden; }
+body {
+  text-align: center;
+  background-color: #011F3F;
+  overflow: hidden;
+}
 
-* { margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; }
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
 
-.btn { margin: 30px 20px; display: inline-block; height: 80px; width: 80px; border: 10px solid black; border-radius: 20%; }
+.btn {
+  margin: 30px 20px;
+  display: block;
+  height: 80px;
+  width: 80px;
+  border: 2px solid black;
+  border-radius: 20%;
+  background-color: transparent;
+}
 
-@media (min-width: 600px) { .btn { margin-top: 10%; height: 90px; width: 90px; } }
+@media (min-width: 600px) {
+  .btn {
+    margin-top: 10%;
+    height: 90px;
+    width: 90px;
+  }
+}
 
-@media (min-width: 801px) { .btn { height: 120px; width: 120px; } }
+@media (min-width: 801px) {
+  .btn {
+    height: 120px;
+    width: 120px;
+  }
+}
 
-.red { background-color: red; }
+.btn.title {
+  background-color: white;
+  border-radius: 0;
+  -webkit-box-shadow: 2px 2px black;
+          box-shadow: 2px 2px black;
+}
 
-.green { background-color: green; }
+.red {
+  background-color: red;
+}
 
-.blue { background-color: blue; }
+.green {
+  background-color: green;
+}
 
-.yellow { background-color: yellow; }
+.blue {
+  background-color: blue;
+}
 
-#level-title, #turn { font-family: 'Press Start 2P', cursive; font-size: 2rem; margin-top: 90px; color: #fab34a; }
+.yellow {
+  background-color: yellow;
+}
 
-@media (min-width: 600px) { #level-title, #turn { font-size: 2.3rem; margin-top: 80px; } }
+#level-title, #turn {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 2rem;
+  margin-top: 90px;
+  color: #fab34a;
+}
 
-@media (min-width: 801px) { #level-title, #turn { margin: 70px 2%; width: 95%; font-size: 2.5rem; } }
+@media (min-width: 600px) {
+  #level-title, #turn {
+    font-size: 2.3rem;
+    margin-top: 80px;
+  }
+}
 
-#again { display: none; font-family: 'Press Start 2P', cursive; font-size: 2rem; margin: .1rem; color: lightskyblue; }
+@media (min-width: 801px) {
+  #level-title, #turn {
+    width: 55%;
+    margin: 2rem auto;
+    font-size: 2.5rem;
+  }
+}
 
-.container { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin-top: 1px; }
+#again {
+  display: none;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 2rem;
+  margin: .1rem;
+  color: lightskyblue;
+}
 
-@media (min-width: 600px) { .container { width: 99%; margin: 55px auto; } }
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1px;
+}
 
-@media (min-width: 801px) { .container { margin: 70px auto; width: 98%; } }
+@media (min-width: 600px) {
+  .container {
+    width: 99%;
+    margin: 55px auto;
+  }
+}
 
-.pressed { -webkit-box-shadow: 0 0 20px white; box-shadow: 0 0 20px white; background-color: grey; }
+@media (min-width: 801px) {
+  .container {
+    margin: 70px auto;
+    width: 98%;
+  }
+}
 
-.row { margin: 0; padding: 0; }
+.pressed {
+  -webkit-box-shadow: 0 0 20px white;
+          box-shadow: 0 0 20px white;
+  background-color: grey;
+}
+
+.row {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#rules {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  text-align: center;
+}
+
+#rules h2 {
+  text-align: center;
+  color: white;
+  font-family: 'Press Start 2P', cursive;
+}
+
+#rules p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #fab34a;
+  font-family: 'Press Start 2P', cursive;
+  text-align: center;
+  font-size: .85rem;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+}

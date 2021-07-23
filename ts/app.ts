@@ -6,6 +6,8 @@ const blue = document.querySelector<HTMLDivElement>('#blue[data-id="4"]')
 const start = document.querySelector<HTMLDivElement>('#level-title')
 const turnCounter = document.querySelector<HTMLDivElement>('#turn')
 const again = document.querySelector<HTMLDivElement>('#again')
+const rules = document.querySelector<HTMLDivElement>('#rules')
+
 
 
 // ARRAYS//

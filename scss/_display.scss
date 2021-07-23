@@ -10,8 +10,8 @@
       margin-top: 80px;
     }
     @include DESKTOP{
-     margin: 70px 2%;
-     width: 95%;
+     width: 55%;
+     margin: 2rem auto;
       font-size: 2.5rem;
     }
   }
@@ -47,4 +47,31 @@
   .row{
     margin: 0;
     padding: 0;
+    display: flex;
   }
+
+  #rules{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+
+    h2{
+      text-align: center;
+      color: white;
+      font-family: 'Press Start 2P', cursive;
+    }
+
+    p{
+      display: flex;
+      color: rgb(250, 179, 74);
+      font-family: 'Press Start 2P', cursive;
+      text-align: center;
+      font-size: .85rem;
+      margin-top: .5rem;
+      margin-bottom: .5rem;
+    }
+  }
+
